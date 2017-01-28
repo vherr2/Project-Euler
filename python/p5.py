@@ -7,7 +7,7 @@ def factorize(num, factors):
 	factors.append(num)
 	return factors
 
-def minFactors(lim):
+def minProduct(lim):
 	factors = []
 	for i in xrange(2, lim):
 		temp = i
@@ -15,5 +15,5 @@ def minFactors(lim):
 	return reduce(lambda x, y: x * y, factors)
 
 # minimum number that is divisible by all positive integers up to 20
-print minFactors(20)
+print minProduct(20)
 		
