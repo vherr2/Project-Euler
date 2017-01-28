@@ -7,4 +7,5 @@ def largest_prime_factor(limit):
 			limit /= i
 	return limit
 
+# Largest prime number of 600851475143
 print largest_prime_factor(600851475143)
