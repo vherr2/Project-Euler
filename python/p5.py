@@ -12,9 +12,8 @@ def minFactors(lim):
 	for i in xrange(2, lim):
 		temp = i
 		factors = factorize(i, factors)
-	print factors
-	return factors
+	return reduce(lambda x, y: x * y, factors)
 
 # minimum number that is divisible by all positive integers up to 20
-print reduce(lambda x, y: x*y, minFactors(20))
+print minFactors(20)
 		
