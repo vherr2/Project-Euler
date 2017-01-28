@@ -11,7 +11,7 @@ def largestPalindrome(numDigits):
 			prod = i*j
 			if isPalindrome(prod) and prod > maxPalindrome:
 				maxPalindrome = prod
-	return prod
+	return maxPalindrome
 
 # Return the largest palindrome that is a product of two 3-digit numbers
 print largestPalindrome(3)
