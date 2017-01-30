@@ -1,5 +1,5 @@
 def mults(n, start, max):
-	return [i for i in xrange(start, max, n)]
+	return [i for i in xrange(start, max) if not i%n]
 
 def multsArr(arr, start, max):
 	return sum(set(m for n in arr for m in mults(n, start, max)))
