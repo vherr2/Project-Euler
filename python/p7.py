@@ -5,8 +5,7 @@ def isPrime(num, sieve):
 		if not num % i:
 			return False
 		if i**2 > num:
-			break
-	return True
+			return True
 
 def find_nth_prime(n):
 	sieve = [2]
