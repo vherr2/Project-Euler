@@ -19,5 +19,5 @@ const primeSieve = (lim) => {
 	return sieve.reduce((x, y) => { return x + y; });
 };
 
-// Calculate 10,001st prime number
+// Sum of all the primes below two million
 console.log(primeSieve(2*Math.pow(10, 6)));
