@@ -4,12 +4,7 @@ const memo = [1, 1]
 
 const fib = (n) => {
 	if (memo[n]) return memo[n];
-
-	for (let m = memo.length; m < n; ++m) {
-		memo.push(
-			sum(memo.slice(-2))
-		);
-	}
+	memo.push(sum(memo.slice(-2)));
 };
 
 const fib_even_sum = (lim) => {

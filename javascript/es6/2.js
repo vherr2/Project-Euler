@@ -2,13 +2,8 @@ const memo = [1, 1]
 
 const fib = (n) => {
 	if (memo[n]) return memo[n];
-
-	for (let m = memo.length; m < n; ++m) {
-		memo.push(
-			memo.slice(-2)
-				.reduce((a, b) => { return a + b; })
-		);
-	}
+	memo.push(memo.slice(-2)
+				  .reduce((a, b) => { return a + b; }));
 };
 
 const fib_even_sum = (lim) => {
