@@ -1,7 +1,7 @@
-var range = require('lodash/range');
-var uniq = require('lodash/uniq');
 var flatten = require('lodash/flatten');
+var range = require('lodash/range');
 var sum = require('lodash/sum');
+var uniq = require('lodash/uniq');
 
 const multsArr = (arr, start, max) => {
 	return sum(uniq(flatten(arr.map((n) => range(start, max, n)))))

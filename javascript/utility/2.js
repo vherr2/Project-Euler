@@ -1,3 +1,4 @@
+var last = require('lodash/last');
 var sum = require('lodash/sum');
 
 const memo = [1, 1]
@@ -8,7 +9,7 @@ const fib = (n) => {
 };
 
 const fib_even_sum = (lim) => {
-	while (memo.slice(-1) < lim) {
+	while (last(memo) < lim) {
 		fib(memo.length+1);
 	}
 	
